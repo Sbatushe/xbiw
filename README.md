@@ -11,3 +11,8 @@ If you use sudo there's nothing to configure. If you use doas, edit the script a
 
 ### Install
 Just alias the script with something like xi or xbi
+
+### FAQ
+Q: What will happen if you install a package with 2 possible versions?
+
+A: Nothing, because the script can accept only 1 possible version. If versions are more or less, it stops. If you need to install another kernel version or some other type of software version, just use xbps-install.
