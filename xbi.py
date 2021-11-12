@@ -1,5 +1,5 @@
 # xbps-install wrapper that doesn't care about case sensitive or package versions
-# Prerequisites: doas, fish
+# Prerequisites: doas
 # Written by Sbatushe
 
 import sys
