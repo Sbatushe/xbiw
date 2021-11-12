@@ -10,7 +10,6 @@ import re
 superuser = "sudo"
 #superuser = "doas"
 
-
 if (len(sys.argv)>1):
 
     #grub xbps-query output
