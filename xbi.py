@@ -1,5 +1,4 @@
 # xbps-install wrapper that doesn't care about case sensitive or package versions
-# Prerequisites: doas
 # Written by Sbatushe
 
 import sys
@@ -7,19 +6,24 @@ import os
 import subprocess
 import re
 
+#setup your superuser value
+superuser = "sudo"
+#superuser = "doas"
+
+
 if (len(sys.argv)>1):
 
     #grub xbps-query output
     rv = subprocess.Popen(["xbps-query","-Rs",sys.argv[1]],
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT)
-    stdout,stderr = rv.communicate()
-    if stderr != "None":
+    stdout = rv.communicate()
+    if stdout != "":
     
         #scan xbps-query output
         pkglist = []
-        columns = re.split(r'\\n',str(stdout))
-        for row in columns:
+        results = re.split(r'\\n',str(stdout))
+        for row in results:
             element = re.split(r' ',row)
             if len(element)>1:
                 pkglist.append(element[1])
@@ -40,7 +44,7 @@ if (len(sys.argv)>1):
 
         #install package
         if (len(candidates)== 1):
-            command = "doas xbps-install "+candidates[0]
+            command = superuser+" xbps-install "+candidates[0]
             print("\033[22;92m* \033[22;97m"+ command)
             os.system(command)
                 
