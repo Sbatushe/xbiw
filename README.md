@@ -1,4 +1,4 @@
-# xbi
+# XBI
 Xbps-install wrapper written in Python that doesn't care about case sensitiveness and package versions.
 
 ![xbi](https://raw.githubusercontent.com/Sbatushe/xbi/main/Istantanea_2021-11-12_13-31-56.png)
