@@ -1,7 +1,7 @@
 # XBIW
 Xbps-install wrapper written in Python that doesn't care about case sensitiveness and package versions.
 
-![xbi](https://raw.githubusercontent.com/Sbatushe/xbi/main/Istantanea_2021-11-12_13-31-56.png)
+![xbi](https://raw.githubusercontent.com/Sbatushe/xbi/main/sample.png)
 
 ### Description
 This wrapper allows to easily install packages without worrying about software versions and case sensitiveness. This script is totally safe because it will launch xbps-install without the -y option.
