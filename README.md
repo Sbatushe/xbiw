@@ -14,6 +14,10 @@ Clone the repository:
 ```
 git clone https://github.com/Sbatushe/xbiw
 ```
+Change permission:
+```
+chmod +x xbiw/xbiw
+```
 Install:
 ```
 cp xbiw/xbiw /usr/bin
