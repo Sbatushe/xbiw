@@ -7,7 +7,7 @@ xbiw (XBps-Install Wrapper) is a xbps-install wrapper written in Python and it d
 This wrapper allows to easily install packages without worrying about software versions and case sensitiveness. This script is totally safe because it will launch xbps-install without the -y option.
 
 ### Configure
-If you want to change your superuser value, you can modify the `/usr/bin/xbiw` file and add `sudo` or `doas` where specified
+If you want to change your superuser value, you can modify the script and add `sudo` or `doas` where specified
 
 ### Installation
 Clone the repository:
