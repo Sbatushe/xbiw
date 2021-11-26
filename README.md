@@ -9,7 +9,17 @@ This wrapper allows to easily install packages without worrying about software v
 ### Configure
 If you want to change your superuser value, you can modify the `/usr/bin/xbiw` file and add `sudo` or `doas` where specified
 
+### Installation
+Clone the repository:
+```
+git clone https://github.com/Sbatushe/xbiw
+```
+Install:
+```
+cp xbiw/xbiw /usr/bin
+```
+
 ### FAQ
 Q: What will happen if you install a package with different versions?
 
-A: Nothing, because the script can accept only 1 possible version. If versions are more or less, it stops. If you need to install some strange type of software version, just use xbps-install. However, it's very unlikely that you will find a software with different versions.
+A: This is unlikely to happen (such packages doesn't exist), but if it does, the script won't install nothing: the script can accept only 1 possible version. If the script is unsure about the package to install it won't install nothing (and you could open an issue).
