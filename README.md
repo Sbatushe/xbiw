@@ -1,13 +1,13 @@
 # XBIW
-Xbps-install wrapper written in Python that doesn't care about case sensitiveness and package versions.
+xbiw (XBps-Install Wrapper) is a xbps-install wrapper written in Python and it doesn't care about case sensitiveness or package versions.
 
-![xbi](https://raw.githubusercontent.com/Sbatushe/xbi/main/sample.png)
+![xbiw](https://raw.githubusercontent.com/Sbatushe/xbi/main/sample.png)
 
 ### Description
 This wrapper allows to easily install packages without worrying about software versions and case sensitiveness. This script is totally safe because it will launch xbps-install without the -y option.
 
 ### Configure
-If you use sudo there's nothing to configure. If you use doas, edit the script and set the superuser value to doas
+If you want to change your superuser value, you can modify the `/usr/bin/xbiw` file and add `sudo` or `doas` where specified
 
 ### FAQ
 Q: What will happen if you install a package with different versions?
