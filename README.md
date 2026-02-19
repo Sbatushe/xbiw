@@ -3,6 +3,9 @@ xbiw (XBps-Install Wrapper) is a xbps-install wrapper written in Python and it d
 
 ![xbiw](https://raw.githubusercontent.com/Sbatushe/xbi/main/sample.png)
 
+### Migration
+this repo migrated to ![Codeberg](https://codeberg.org/Sbatushe/xbiw)
+
 ### Description
 This wrapper allows to easily install packages without worrying about software versions and case sensitiveness. This script is totally safe because it will launch xbps-install without the -y option.
 
